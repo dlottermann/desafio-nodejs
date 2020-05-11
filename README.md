@@ -8,10 +8,10 @@ A solução elaborada tem como foco principal manter a integridade, disponibilid
 ### Base de dados A
 Possui dados  extremamente sensível e deve ser protegida com os maiores níveis de segurança, mas o acesso a esses dados não precisa ser tão performática. 
 
-###Base de dados B
+### Base de dados B
 Possui dados críticos, o acesso precisa ser mais rápido. Base B além de consultas é utilizada para extração de dados por meio de algoritmos de aprendizado de máquina.
 
-###Base de dados C
+### Base de dados C
 Não possui nenhum tipo de dado crítico, mas precisa de um acesso extremamente rápido
 
 
