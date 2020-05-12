@@ -62,6 +62,10 @@ Adicionei a API gateway para tornar o endpoint único de acesso a APIs, implanta
 Algumas regras podem ser implantadas futuramente para redirecionamentos, tratamento de requisições http e etc.
 
 
+![Screenshot](https://github.com/dlottermann/desafio-nodejs/blob/master/Modelo%20Armazenamento.png?raw=true)
+
+
+
 ## Código Modelo
 
  Para exemplificar o modelo de funcionamento foram criados 3 pequenos micro serviços, com dados mockados para simulação das bases de dados.
@@ -122,3 +126,21 @@ Após executar o passo a passo via docker ou para cada services, você pode reto
     npm install && npm start
 
 Este comando vai efetuar o download das dependências e inicializar a nossa API gateway.
+
+## Acesso à informação
+Todos os métodos estão expostos por GET uma url única (http://localhost:3000/), variando apenas o endpoint consultado.
+
+- http://localhost:3000/service-a
+
+- http://localhost:3000/service-b
+
+- http://localhost:3000/service-c
+
+Para acesso ao services A e B primeiro e segundo endpoint respectivamente, recomendo os softwares Insomnia ou Postman, para adicionar o header  “Authorization” para assim obter acesso aos dados.
+
+* Obs: Apenas reforçando são dados mockados devido ao tempo utilizado para desenvolvimento e elaboração do projeto como um todo.
+
+## Melhorias futuras
+
+- Acrescentar dados dinámicos com bases de dados contenerizadas com Postgresql e MongoDB.
+- Implementação de logs na API gateway
