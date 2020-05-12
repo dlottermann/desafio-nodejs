@@ -1,0 +1,23 @@
+version: '3.1'
+services: 
+    serviceA: 
+        image: node
+        volumes: 
+        - ./services/serviceA:/services/serviceA
+        ports: 
+        - 3001:3001
+        command: bash -c "cd /services/serviceA && npm install && npm start"
+    serviceB:
+        image: node
+        volumes: 
+         - ./services/serviceB:/services/serviceB
+        ports: 
+        - 3002:3002
+        command: bash -c "cd /services/serviceB && npm install && npm start"
+    serviceC:
+        image: node
+        volumes: 
+        - ./services/serviceC:/services/serviceC
+        ports: 
+        - 3003:3003
+        command: bash -c "cd /services/serviceC && npm install && npm start"    
